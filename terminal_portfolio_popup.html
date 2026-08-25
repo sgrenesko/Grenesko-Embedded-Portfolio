@@ -106,7 +106,7 @@
       margin: 0;
       font-family:'super legend boy';
       font-size: clamp(2.5rem, 8vw, 5.5rem);
-      line-height: 1;
+      line-height: 1.2;
       letter-spacing: -2px;
       color: var(--green_dim);
     }
@@ -251,7 +251,6 @@
     .project-window {
       width: min(900px,96vw); max-height: 90vh; overflow-y: auto;
       border: 2px solid var(--green); background: var(--black);
-      box-shadow: 0 0 30px rgba(51,255,102,.25), inset 0 0 35px rgba(51,255,102,.04);
     }
     .project-window .terminal-bar { position: sticky; top: 0; z-index: 2; }
     .close-button {
@@ -312,7 +311,7 @@
         <h1>STEPHEN<br>GRENESKO</h1>
 
         <p class="subtitle">
-          Electrical &amp; computer engineer building hardware, software,
+          Computer &amp; embedded software engineering specialist building hardware, software,
           robotics, and systems that connect the physical and digital worlds.
           <span class="cursor"></span>
         </p>
@@ -330,9 +329,8 @@
         <div class="about">
           <div>
             <p>
-              I am an engineer with a background spanning electronics,
-              computer science, robotics, prototyping, and hands-on hardware
-              development.
+              I am an engineering specialist with a focus on computer engineering, rapid prototyping, and embedded software systems
+              with a background in microcontroller development, mechatronics research, and laboratory management/automation.
             </p>
 
             <p>
@@ -349,7 +347,6 @@
           </div>
 
           <figure class="photo">
-            <!-- Replace this URL with your own photo -->
             <img src="img/Grenesko_Headshot.JPG"
                  alt="Portfolio portrait">
             <figcaption>IMG_001 // StephenGrenesko.jpg</figcaption>
@@ -367,19 +364,19 @@
             <div class="tech">Python / Bash / Raspberry Pi</div>
           </article>
           <article class="project" data-project="lab-automation" tabindex="0" role="button">
-            <h3>02 // Lab Automation</h3>
-            <p>Hardware and software systems for makerspace and laboratory automation, including Raspberry Pi and ESP32-based tools.</p>
-            <div class="tech">Python / ESP32 / Raspberry Pi / APIs</div>
+            <h3>02 // Laptop Configuration Automation</h3>
+            <p>Executable scripts for automating laptop tablet system configuration for customer deployments.</p>
+            <div class="tech">Python / PowerShell / Windows OS / APIs</div>
           </article>
           <article class="project" data-project="computer-vision" tabindex="0" role="button">
-            <h3>03 // Computer Vision</h3>
-            <p>A computer-vision and force-probe workflow for improving consistency in 3D scanning and prosthetic socket preparation.</p>
-            <div class="tech">Python / OpenCV / 3D Scanning / Electronics</div>
+            <h3>03 // Computer Vision Research</h3>
+            <p>A computer-vision and microcontroller based workflow for improving consistency in 3D scanning and prosthetic socket preparation.</p>
+            <div class="tech">Python / OpenCV / 3D Scanning / Embedded Electronics</div>
           </article>
           <article class="project" data-project="embedded-systems" tabindex="0" role="button">
-            <h3>04 // Embedded Systems</h3>
-            <p>Custom electronics prototypes integrating sensors, LEDs, communications, microcontrollers, and purpose-built PCBs.</p>
-            <div class="tech">C/C++ / Arduino / PCB Design / I2C</div>
+            <h3>04 // MSynth Paint</h3>
+            <p>An interactive embedded system designed to encode pixel data into audio signals to convert images into music.</p>
+            <div class="tech">C/C++ / Arduino / Data Structures / I2C</div>
           </article>
         </div>
       </section>
@@ -402,11 +399,11 @@ The goal was to turn a standalone game into a dependable public installation. Ra
 This project combined software deployment, Linux configuration, hardware integration, troubleshooting, and real-world testing in a public environment.</div>
             <div class="project-images">
               <figure class="project-image">
-                <img src="img/12 copy.JPG" alt="ROC CLIMBER project image 1">
+                <img src="img/roc_climber_cabinet.JPG" alt="ROC CLIMBER project image 1">
                 <figcaption>IMG_001 // roc_climber_cabinet.jpg</figcaption>
               </figure>
               <figure class="project-image">
-                <img src="https://placehold.co/900x560/091009/33ff66?text=ROC_CLIMBER+%7C+IMAGE+02" alt="ROC CLIMBER project image 2">
+                <img src="img/roc_climber_building.png" alt="ROC CLIMBER project image 2">
                 <figcaption>IMG_002 // project-image-02.jpg</figcaption>
               </figure>
             </div>
@@ -421,28 +418,28 @@ This project combined software deployment, Linux configuration, hardware integra
         <div class="project-window" role="dialog" aria-modal="true" aria-labelledby="lab-automation-title">
           <div class="terminal-bar">
             <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-            <span class="terminal-title">lab_automation.exe</span>
+            <span class="terminal-title">laptop_automation.exe</span>
             <button class="close-button" type="button" aria-label="Close project window">X</button>
           </div>
           <div class="project-content">
-            <div class="prompt">guest@portfolio:~/projects$ cat lab_automation.txt</div>
-            <h2 id="lab-automation-title">LAB AUTOMATION</h2>
-            <div class="project-path">/projects/lab-automation</div>
-            <div class="project-description">A collection of hardware and software systems developed to automate processes in a makerspace and laboratory environment. The work included Raspberry Pi and ESP32 devices, custom electronics, web interfaces, Python automation, and API integrations.
-
-One system used an ESP32 to collect information and communicate with a backend service, while Raspberry Pi systems were used for local interfaces and automation. These projects were designed around practical constraints: inexpensive hardware, maintainability, reliable startup, and interfaces that could be operated without specialized technical knowledge.</div>
+            <div class="prompt">guest@portfolio:~/projects$ cat laptop_automation.txt</div>
+            <h2 id="laptop-automation-title">LAPTOP CONFIGURATION AUTOMATION</h2>
+            <div class="project-path">/projects/laptop-automation</div>
+            <div class="project-description">A series of executable scripts written in Python and PowerShell to automate the configuration and setup of Windows rugged tablet laptop computers. Each laptop had to be configured to ensure system compatability with the
+              company's custom Chrome application and to meet the requirements of the field environment. The scripts were designed to be run on each laptop to ensure consistent configuration and reduce manual setup time.
+            </div>
             <div class="project-images">
               <figure class="project-image">
-                <img src="https://placehold.co/900x560/091009/33ff66?text=LAB_AUTOMATION+%7C+IMAGE+01" alt="LAB AUTOMATION project image 1">
+                <img src="img/tablet_config.png" alt="LAB AUTOMATION project image 1">
                 <figcaption>IMG_001 // project-image-01.jpg</figcaption>
               </figure>
               <figure class="project-image">
-                <img src="https://placehold.co/900x560/091009/33ff66?text=LAB_AUTOMATION+%7C+IMAGE+02" alt="LAB AUTOMATION project image 2">
+                <img src="img/tablet.jpg" alt="LAB AUTOMATION project image 2">
                 <figcaption>IMG_002 // project-image-02.jpg</figcaption>
               </figure>
             </div>
             <div class="project-meta">
-              <strong>STACK:</strong> Python / ESP32 / Raspberry Pi / React / APIs<br>
+              <strong>STACK:</strong> Python / PowerShell / Windows Administration<br>
               <strong>STATUS:</strong> ACTIVE
             </div>
           </div>
@@ -457,7 +454,7 @@ One system used an ESP32 to collect information and communicate with a backend s
           </div>
           <div class="project-content">
             <div class="prompt">guest@portfolio:~/projects$ cat computer_vision.txt</div>
-            <h2 id="computer-vision-title">COMPUTER VISION</h2>
+            <h2 id="computer-vision-title">COMPUTER VISION RESEARCH</h2>
             <div class="project-path">/projects/computer-vision</div>
             <div class="project-description">A computer-vision and force-probe toolkit developed to improve consistency in prosthetic socket alignment and model preparation. The system combined camera marker tracking, Python processing, and force-point measurements with 3D scan data.
 
@@ -466,11 +463,11 @@ The workflow was designed to reduce manual interpretation and make experimental 
 The resulting system achieved approximately 90% accuracy in water-displacement fit testing and provided a more structured approach to prototype evaluation.</div>
             <div class="project-images">
               <figure class="project-image">
-                <img src="https://placehold.co/900x560/091009/33ff66?text=COMPUTER_VISION+%7C+IMAGE+01" alt="COMPUTER VISION project image 1">
+                <img src="img/force_probe.png" alt="COMPUTER VISION project image 1">
                 <figcaption>IMG_001 // project-image-01.jpg</figcaption>
               </figure>
               <figure class="project-image">
-                <img src="https://placehold.co/900x560/091009/33ff66?text=COMPUTER_VISION+%7C+IMAGE+02" alt="COMPUTER VISION project image 2">
+                <img src="img/point_ref.png" alt="COMPUTER VISION project image 2">
                 <figcaption>IMG_002 // project-image-02.jpg</figcaption>
               </figure>
             </div>
@@ -482,31 +479,31 @@ The resulting system achieved approximately 90% accuracy in water-displacement f
         </div>
       </div>
       <div class="project-modal" id="embedded-systems-modal" aria-hidden="true">
-        <div class="project-window" role="dialog" aria-modal="true" aria-labelledby="embedded-systems-title">
+        <div class="project-window" role="dialog" aria-modal="true" aria-labelledby="msynth_paint-title">
           <div class="terminal-bar">
             <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-            <span class="terminal-title">embedded_systems.exe</span>
+            <span class="terminal-title">msynth_paint.exe</span>
             <button class="close-button" type="button" aria-label="Close project window">X</button>
           </div>
           <div class="project-content">
-            <div class="prompt">guest@portfolio:~/projects$ cat embedded_systems.txt</div>
-            <h2 id="embedded-systems-title">EMBEDDED SYSTEMS</h2>
-            <div class="project-path">/projects/embedded-systems</div>
-            <div class="project-description">A collection of custom electronics prototypes spanning microcontrollers, sensors, LEDs, communications buses, and purpose-built PCBs. The work focuses on taking an idea from a breadboard or development board through debugging and toward a more integrated hardware implementation.
-
-Projects have included Arduino and ESP32 firmware, I2C-connected peripherals, LED systems, sensor interfaces, power distribution, and custom PCB development. A major part of the work is hardware bring-up: measuring signals, isolating faults, validating power rails, and making the system robust under real operating conditions.</div>
+            <div class="prompt">guest@portfolio:~/projects$ cat msynth_paint.txt</div>
+            <h2 id="msynth_paint-title">MSYNTH_PAINT</h2>
+            <div class="project-path">/projects/msynth_paint</div>
+            <div class="project-description">A personal project to demonstrate the usage of data storage and manipulation techniques in embedded systems using a fun and creative medium. The application is a simple draw pad of 64 x 64 pixels where a user can draw an image
+              and then the program will synthesize the image into tones of frequencies varying depending on pixel color and position. The pixel data is bit encoded from 3 separate values to one packed 24 bit integer. This allows the frequency that is played to be based on all three values (R, G, B) rather than a
+              composite, which would lose information. There is currently only one executable which is OS based, so varies in functionality depending on the computer used, but a second branching component is being made that will run on a Raspberry Pi and be a standalone portable device.</div>
             <div class="project-images">
               <figure class="project-image">
-                <img src="https://placehold.co/900x560/091009/33ff66?text=EMBEDDED_SYSTEMS+%7C+IMAGE+01" alt="EMBEDDED SYSTEMS project image 1">
+                <img src="https://placehold.co/900x560/091009/33ff66?text=MSYNTH_PAINT+%7C+IMAGE+01" alt="MSYNTH_PAINT project image 1">
                 <figcaption>IMG_001 // project-image-01.jpg</figcaption>
               </figure>
               <figure class="project-image">
-                <img src="https://placehold.co/900x560/091009/33ff66?text=EMBEDDED_SYSTEMS+%7C+IMAGE+02" alt="EMBEDDED SYSTEMS project image 2">
+                <img src="https://placehold.co/900x560/091009/33ff66?text=MSYNTH_PAINT+%7C+IMAGE+02" alt="MSYNTH_PAINT project image 2">
                 <figcaption>IMG_002 // project-image-02.jpg</figcaption>
               </figure>
             </div>
             <div class="project-meta">
-              <strong>STACK:</strong> C/C++ / Arduino / ESP32 / PCB Design / I2C<br>
+              <strong>STACK:</strong> C/C++ / Arduino / Data Structures / PCB Design / I2C<br>
               <strong>STATUS:</strong> ONGOING
             </div>
           </div>
